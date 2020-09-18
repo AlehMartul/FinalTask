@@ -1,0 +1,22 @@
+version: "3"
+services:
+  web-tomcat:
+    ports:
+     - 7050:8080
+    build:
+      context: ./
+      args:
+          - GIT_USR=AlehMartul
+          - GIT_PWD=traktal15
+    links:
+    - db
+  
+  db:
+    image: mysql:5.7
+    ports:
+     - 3304:3306
+    environment:
+       - MYSQL_ROOT_PASSWORD=root
+       - MYSQL_USER=login
+       - MYSQL_PASSWORD=password
+       - MYSQL_DATABASE=union_reporting
