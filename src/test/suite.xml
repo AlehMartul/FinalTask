@@ -1,0 +1,18 @@
+<suite name="ResultTaskTestSuite">
+    <test name="testCreateNewProjectAndTest">
+        <parameter name="id" value="406"/>
+        <parameter name="name" value="KS-707 adding info"/>
+        <parameter name="status_id" value="1"/>
+        <parameter name="method_name" value="com.hellsbells.tests.test"/>
+        <parameter name="project_id" value="7"/>
+        <parameter name="session_id" value="12"/>
+        <parameter name="start_time" value="2016-10-12 18:56:58"/>
+        <parameter name="end_time" value="2016-10-12 18:57:59"/>
+        <parameter name="env" value="GRIGORYEVS"/>
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+            <class name="project.tests.FinalTest"/>
+        </classes>
+    </test>
+</suite>
